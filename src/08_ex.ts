@@ -14,7 +14,6 @@
    *
    
 */
-need to fix
 
 import * as prompts from "prompts";
 
@@ -25,12 +24,12 @@ import * as prompts from "prompts";
     message: ">Enter the number!",
   });
    console.log(response.num);
-
+   let n = response.num;
    let string = "";
-// Upside pyramid
-for (let i = 1; i <= response.num; i++) {
+
+for (let i = 1; i <= n; i++) {
   // printing spaces
-  for (let j = response.num; j > i; j--) {
+  for (let j = n; j > i; j--) {
     string += " ";
   }
   // printing star
@@ -39,14 +38,14 @@ for (let i = 1; i <= response.num; i++) {
   }
   string += "\n";
 }
-// downside pyramid
-for (let i = 1; i <= response.num - 1; i++) {
+// downside
+for (let i = 1; i <= n - 1; i++) {
   // printing spaces
   for (let j = 0; j < i; j++) {
     string += " ";
   }
   // printing star
-  for (let k = (response.num - i) * 2 - 1; k > 0; k--) {
+  for (let k = (n - i) * 2 - 1; k > 0; k--) {
     string += "*";
   }
   string += "\n";

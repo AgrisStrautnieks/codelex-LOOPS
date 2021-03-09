@@ -12,6 +12,4 @@ import * as prompts from "prompts";
 
 
 
-
-
 })();
