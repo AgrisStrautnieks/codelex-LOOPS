@@ -22,11 +22,15 @@ import * as prompts from "prompts";
   });
    console.log(response.num);
 
+   let  n = response.num;
    let emptyString = "";
+   let star = '*';
    
-   for (var i = 0; i < response.num; i++) {
+   console.log(star.repeat(n) + star);
 
-            emptyString += '.'.repeat(i) + '*'.repeat(response.num - i) + '\n';
+   for (var i = 0; i < n; i++) {
+
+            emptyString += '.'.repeat(i) + star.repeat(n - i) + '\n';
           }
 
           console.log(emptyString);
